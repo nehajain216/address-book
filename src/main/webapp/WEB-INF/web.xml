@@ -20,4 +20,14 @@
     <servlet-name>AddNewContactServlet</servlet-name>
     <url-pattern>/AddNewContactServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ViewContactServlet</display-name>
+    <servlet-name>ViewContactServlet</servlet-name>
+    <servlet-class>com.nj.addressbook.servlet.ViewContactServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewContactServlet</servlet-name>
+    <url-pattern>/ViewContactServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

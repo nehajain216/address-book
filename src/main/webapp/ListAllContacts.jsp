@@ -26,6 +26,7 @@
 				<td><c:out value="${contact.phoneNumber}" /></td>
 				<td><c:out value="${contact.email}" /></td>
 				<td><c:out value="${contact.address}" /></td>
+				<td colspan="2"><a href="ViewContactServlet?id=${contact.id}">View</a></td>
 			</tr>
 		</c:forEach>
 	</table>

@@ -5,22 +5,29 @@
 </head>
 <body>
 	<h3>Add New Contact</h3>
-	<form action="AddNewContactServlet" method="POST" >
+	<form action="AddNewContactServlet" method="POST">
 
-			Name :	
-			<input type="text" name="name"/><br>		
-		
-			Phone Number :
-			<input type="text" name="phonenumber"/>
-			
-			Email :
-			<input type="text" name="email"/>
-			
-			Address :
-			<input type="text" name="address"/>
-			
-			<input type="submit" value="submit">			
-		
-		</form>
+		<table>
+			<tr>
+				<td>Name :</td>
+				<td><input type="text" name="name" /></td>
+			</tr>
+			<tr>
+				<td>Phone Number :</td>
+				<td><input type="text" name="phonenumber" /></td>
+			</tr>
+			<tr>
+				<td>Email :</td>
+				<td><input type="text" name="email" /></td>
+			</tr>
+			<tr>
+				<td>Address :</td>
+				<td><input type="text" name="address" /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="submit"></td>
+			</tr>
+		</table>
+	</form>
 </body>
 </html>
