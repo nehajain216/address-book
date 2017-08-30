@@ -1,7 +1,10 @@
 package com.nj.addressbook.utils;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.nj.addressbook.config.AppConfig;
 
 public class SpringContext 
 {
@@ -15,7 +18,8 @@ public class SpringContext
 	{
 		if(ctx == null)
 		{
-			ctx = new ClassPathXmlApplicationContext("applicationcontext.xml");
+			//ctx = new ClassPathXmlApplicationContext("applicationcontext.xml");
+			ctx = new AnnotationConfigApplicationContext(AppConfig.class);
 		}
 		return ctx;
 	}

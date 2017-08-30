@@ -4,15 +4,20 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.nj.addressbook.dao.AddressBookDAO;
 import com.nj.addressbook.entities.Contact;
 
-@Component
+@Service
 public class AddressBookService 
 {
 	private AddressBookDAO addressBookDAO;
 	
+	public Contact createDuplicateContacts(Contact contact) {
+		return addressBookDAO.createDuplicateContacts(contact);
+	}
+
 	@Autowired
 	public AddressBookService(AddressBookDAO addressBookDAO) {
 		super();
